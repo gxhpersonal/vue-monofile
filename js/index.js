@@ -6,9 +6,41 @@ var vm = new Vue({
       { text: '学习 Vue' },
       { text: '整个牛项目' }
     ],
-    tftext:"这是一段24px大小的字体"
+    tftext: "这是一段24px大小的字体"
+  },
+  created() {
+    // this.$http.get("api").then(function (data) {
+    //   console.log(data)
+    // })
   },
   mounted() {
-    console.log(this.todos)
+    // this.$http.get("api").then(function (data) {
+    //   // console.log(data)
+    // })
+    // this.$http.post("api",
+    //   { mobile: xxxxxxxx },
+    //   {
+    //     headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+    //     emulateJSON: true,
+    //     progress:function(event){
+    //       console.log(event)
+    //     }
+    //   }
+    // ).then(function (data) {
+    //   // console.log(data)
+    // })
+
+    axios({
+      url: "api",
+      method: "post",
+      data:  'mobile= xxxxxxxx',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' }
+    }).then(function (data) {
+      console.log(data)
+    }).catch(function (err) {
+      console.log(err)
+    })
+
+    // console.log(this.todos)
   }
 })
