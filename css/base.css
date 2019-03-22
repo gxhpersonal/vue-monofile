@@ -1,0 +1,138 @@
+html,body {
+    color: #666;
+    max-width:640px;
+    margin: 0 auto !important;
+    -webkit-font-smoothing: antialiased;
+    font-family: "微软雅黑", "Microsoft YaHei", SimHei, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    html {
+        font-size: 17.06px !important;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 374px) {
+    html {
+        font-size: 19.2px !important;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 413px) {
+    html {
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (min-width: 414px) and (max-width: 499px) {
+    html {
+        font-size: 22.08px !important;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 567px) {
+    html {
+        font-size: 26.66px !important;
+    }
+}
+
+@media only screen and (min-width: 568px) and (max-width: 639px) {
+    html {
+        font-size: 30.29px !important;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    html {
+        font-size: 34.13px !important;
+    }
+}
+ul,ol{
+    padding:0;
+    margin:0;
+}
+ul li,ol li{
+    list-style:none;
+}
+button, a {
+    -webkit-touch-callout: none;
+    -moz-touch-callout: none;
+    -ms-touch-callout: none;
+    touch-callout: none;
+    user-select: none
+}
+
+input,button{
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 0;
+}
+img{
+    display: block;
+    width:100%;
+}
+a{
+    text-decoration: none;
+    display:block;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+/* 清楚浮动 */
+
+.clear {
+  clear: both;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+/* 清楚浮动 */
+.page{
+    width:100%;
+    height:100%;
+    background:#f4f4f4;
+    padding-bottom:20%;
+    position:relative;
+}
+.top{
+    width:100%;
+    height:2.63rem;
+    background:#1c1b20;
+    color:#fff;
+    line-height:2.63rem;
+    position:relative;
+}
+ .top span{
+    display:block;
+    width:50%;
+    height:2.63rem;
+    position:absolute;
+    top:0;
+    text-align:center;
+    left:50%;
+    margin-left:-25%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+     outline: 0!important;
+     font-size:.87rem;
+     color:#fff;
+     line-height:2.63rem;
+}
