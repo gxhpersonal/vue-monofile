@@ -10,6 +10,10 @@ var vm = new Vue({
     tftext: "这是一段24px大小的字体"
   },
   created() {
+    window.addEventListener('devicelight', function(event) {
+      console.log(event.value + 'lux');
+      this.lightVal = event.value;
+    })
     // this.$http.get("api").then(function (data) {
     //   console.log(data)
     // })
