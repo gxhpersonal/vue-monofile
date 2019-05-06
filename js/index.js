@@ -10,9 +10,6 @@ var vm = new Vue({
     tftext: "这是一段24px大小的字体"
   },
   created() {
-    //获取亮度0 - 1之间的数值
-    alert(plus.screen.getBrightness())
-    setTimeout(()=>{plus.screen.setBrightness( 0.5 );},20000)
     // this.$http.get("api").then(function (data) {
     //   console.log(data)
     // })
@@ -48,8 +45,5 @@ var vm = new Vue({
     // console.log(this.todos)
   },
   methods: {
-    setLight: function (val) {
-      plus.screen.setBrightness(val/100);
-    }
   }
 })
