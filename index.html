@@ -73,6 +73,16 @@
         <div class="box">这是一个100*200的盒子</div>
         <h2></h2>
         <a href="https://svip-test.jia-expo.com/index.html">跳转svip测试页</a>
+        <!-- 使用range滑块设置屏幕亮度的实例 -->
+        <div class="mui-content">
+            <div style="height:50px;"></div>
+            <div style="padding:20px;">
+                <div class="mui-input-row mui-input-range">
+                    <label>Range</label>
+                    <input type="range" min="0" max="100" v-model="lightVal" @change="setLight(lightVal)">
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./js/vue.js"></script>
     <!-- <script src="./js/vue-resource.min.js"></script> -->
